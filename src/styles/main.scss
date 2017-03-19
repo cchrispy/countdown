@@ -1,7 +1,9 @@
-.timebox {
-
+.timebox, .timeInput {
   display: inline-block;
-  padding: 30px;
+  padding: 15px 30px;
+}
+
+.timebox {
 
   .paperWrap {
 
@@ -23,15 +25,9 @@
 
 
 .timeInput {
-  display: inline-block;
-  padding: 30px;
 
   h4: {
-    font: Arial;
+    font-family: Arial;
     margin: 10px 5px;
-  }
-
-  .selectWrap {
-    width: 100px;
   }
 }
