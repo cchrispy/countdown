@@ -1,0 +1,25 @@
+.timebox {
+
+  display: inline-block;
+  padding: 30px;
+
+  .paperWrap {
+
+    height: 100px;
+    width: 100px;
+    text-align: center;
+
+    .counter {
+      font-size: 3em;
+      padding: 5px;
+      margin: 0px;
+    }
+    .timeType {
+      padding: 0px;
+      margin: 0px;
+    }
+
+  }
+
+
+}
