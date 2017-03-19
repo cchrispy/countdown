@@ -9481,7 +9481,12 @@ var Main = function (_Component) {
       return _react2.default.createElement(
         'div',
         null,
-        'Hey'
+        _react2.default.createElement(
+          'h1',
+          { className: 'header' },
+          'Countdown Timer'
+        ),
+        _react2.default.createElement('hr', null)
       );
     }
   }]);

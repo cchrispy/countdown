@@ -9,7 +9,11 @@ class Main extends Component {
 
   render() {
     return (
-      <div>Hey</div>
+      <div>
+        <h1 className='header'>Countdown Timer</h1>
+        <hr/>
+        
+      </div>
     )
   }
 }
