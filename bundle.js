@@ -9514,8 +9514,38 @@ var Main = function (_Component) {
     value: function toggleInterval() {
       if (this.state.ticking) {
         clearInterval(this.interval);
+        this.setState({ ticking: false });
       } else {
-        this.interval = setInterval(function () {}, 1000);
+        this.setState(Object.assign({}, this.state, this.state.inputs, { ticking: true }));
+        this.interval = setInterval(this.tick.bind(this), 1000);
+      }
+    }
+  }, {
+    key: 'tick',
+    value: function tick() {
+      var total = this.state.day * 86400 + this.state.hour * 3600 + this.state.minute * 60 + this.state.second;
+      if (total <= 0) {
+        this.setState({ second: 0 });
+        this.toggleInterval();
+      } else {
+        total--;
+        var day = 0,
+            hour = 0,
+            minute = 0;
+        while (total > 86400 - 1) {
+          day++;
+          total -= 86400;
+        }
+        while (total > 3600 - 1) {
+          hour++;
+          total -= 3600;
+        }
+        while (total > 60 - 1) {
+          minute++;
+          total -= 60;
+        }
+        var second = total;
+        this.setState({ day: day, hour: hour, minute: minute, second: second });
       }
     }
   }, {
