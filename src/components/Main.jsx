@@ -80,29 +80,33 @@ class Main extends Component {
             val={ this.state.inputs.day }
             label={ 'days' }
             count={ 99 }
+            ticking={ this.state.ticking }
             handleChange={ this.handleChange.bind(this, 'day') } />
           <TimeInput
             val={ this.state.inputs.hour }
             label={ 'hours' }
             count={ 23 }
+            ticking={ this.state.ticking }
             handleChange={ this.handleChange.bind(this, 'hour') } />
           <TimeInput
             val={ this.state.inputs.minute }
             label={ 'minutes' }
             count={ 59 }
+            ticking={ this.state.ticking }
             handleChange={ this.handleChange.bind(this, 'minute') } />
           <TimeInput
             val={ this.state.inputs.second }
             label={ 'seconds' }
             count={ 59 }
+            ticking={ this.state.ticking }
             handleChange={ this.handleChange.bind(this, 'second') } />
         </div>
 
 
-        <TimeBox counter={ this.state.day } type='day' />
-        <TimeBox counter={ this.state.hour } type='hour' />
-        <TimeBox counter={ this.state.minute } type='minute' />
-        <TimeBox counter={ this.state.second } type='second' />
+        <TimeBox counter={ this.state.day } type='days' />
+        <TimeBox counter={ this.state.hour } type='hours' />
+        <TimeBox counter={ this.state.minute } type='minutes' />
+        <TimeBox counter={ this.state.second } type='seconds' />
 
       </div>
     )

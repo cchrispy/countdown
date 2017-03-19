@@ -9572,27 +9572,31 @@ var Main = function (_Component) {
             val: this.state.inputs.day,
             label: 'days',
             count: 99,
+            ticking: this.state.ticking,
             handleChange: this.handleChange.bind(this, 'day') }),
           _react2.default.createElement(_TimeInput2.default, {
             val: this.state.inputs.hour,
             label: 'hours',
             count: 23,
+            ticking: this.state.ticking,
             handleChange: this.handleChange.bind(this, 'hour') }),
           _react2.default.createElement(_TimeInput2.default, {
             val: this.state.inputs.minute,
             label: 'minutes',
             count: 59,
+            ticking: this.state.ticking,
             handleChange: this.handleChange.bind(this, 'minute') }),
           _react2.default.createElement(_TimeInput2.default, {
             val: this.state.inputs.second,
             label: 'seconds',
             count: 59,
+            ticking: this.state.ticking,
             handleChange: this.handleChange.bind(this, 'second') })
         ),
-        _react2.default.createElement(_TimeBox2.default, { counter: this.state.day, type: 'day' }),
-        _react2.default.createElement(_TimeBox2.default, { counter: this.state.hour, type: 'hour' }),
-        _react2.default.createElement(_TimeBox2.default, { counter: this.state.minute, type: 'minute' }),
-        _react2.default.createElement(_TimeBox2.default, { counter: this.state.second, type: 'second' })
+        _react2.default.createElement(_TimeBox2.default, { counter: this.state.day, type: 'days' }),
+        _react2.default.createElement(_TimeBox2.default, { counter: this.state.hour, type: 'hours' }),
+        _react2.default.createElement(_TimeBox2.default, { counter: this.state.minute, type: 'minutes' }),
+        _react2.default.createElement(_TimeBox2.default, { counter: this.state.second, type: 'seconds' })
       );
     }
   }]);
@@ -35650,7 +35654,8 @@ var TimeInput = function TimeInput(props) {
           value: props.val,
           onChange: props.handleChange,
           maxHeight: 400,
-          style: { width: '100px' } },
+          style: { width: '100px' },
+          disabled: props.ticking },
         items
       )
     )

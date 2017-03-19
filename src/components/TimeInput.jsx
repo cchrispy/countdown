@@ -17,7 +17,8 @@ const TimeInput = props => {
           value={ props.val }
           onChange={ props.handleChange }
           maxHeight={ 400 }
-          style={{ width: '100px' }} >
+          style={{ width: '100px' }}
+          disabled={ props.ticking } >
 
           { items }
 
