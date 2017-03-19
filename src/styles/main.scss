@@ -18,8 +18,20 @@
       padding: 0px;
       margin: 0px;
     }
+  }
+}
 
+
+.timeInput {
+  display: inline-block;
+  padding: 30px;
+
+  h4: {
+    font: Arial;
+    margin: 10px 5px;
   }
 
-
+  .selectWrap {
+    width: 100px;
+  }
 }
