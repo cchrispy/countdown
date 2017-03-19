@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+
 import '../styles/main.scss';
+import TimeBox from './TimeBox.jsx';
 
 class Main extends Component {
   constructor(props) {
@@ -12,7 +14,10 @@ class Main extends Component {
       <div>
         <h1 className='header'>Countdown Timer</h1>
         <hr/>
-        
+        <TimeBox counter={ 99 } type='day' />
+        <TimeBox counter={ 99 } type='hour' />
+        <TimeBox counter={ 99 } type='minute' />
+        <TimeBox counter={ 99 } type='second' />
       </div>
     )
   }
