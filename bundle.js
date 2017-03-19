@@ -11428,7 +11428,7 @@ exports = module.exports = __webpack_require__(85)(undefined);
 
 
 // module
-exports.push([module.i, "div {\n  background-color: red; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 

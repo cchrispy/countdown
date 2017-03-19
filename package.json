@@ -2,7 +2,7 @@
   "name": "countdown",
   "version": "1.0.0",
   "description": "countdownTimer",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "webpack",
@@ -10,6 +10,10 @@
   },
   "author": "chris",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cchrispy/countdown.git"
+  },
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
