@@ -9475,7 +9475,12 @@ var Main = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
-    _this.state = {};
+    _this.state = {
+      day: 99,
+      hour: 99,
+      minute: 99,
+      second: 99
+    };
     return _this;
   }
 
@@ -9491,10 +9496,10 @@ var Main = function (_Component) {
           'Countdown Timer'
         ),
         _react2.default.createElement('hr', null),
-        _react2.default.createElement(_TimeBox2.default, { counter: 99, type: 'day' }),
-        _react2.default.createElement(_TimeBox2.default, { counter: 99, type: 'hour' }),
-        _react2.default.createElement(_TimeBox2.default, { counter: 99, type: 'minute' }),
-        _react2.default.createElement(_TimeBox2.default, { counter: 99, type: 'second' })
+        _react2.default.createElement(_TimeBox2.default, { counter: this.state.day, type: 'day' }),
+        _react2.default.createElement(_TimeBox2.default, { counter: this.state.hour, type: 'hour' }),
+        _react2.default.createElement(_TimeBox2.default, { counter: this.state.minute, type: 'minute' }),
+        _react2.default.createElement(_TimeBox2.default, { counter: this.state.second, type: 'second' })
       );
     }
   }]);
