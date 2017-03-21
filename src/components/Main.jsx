@@ -34,7 +34,7 @@ class Main extends Component {
   toggleInterval() {
     if (this.state.ticking) {
       clearInterval(this.interval);
-      this.setState({ ticking: false})
+      this.setState({ ticking: false })
     } else {
       this.setState(Object.assign({}, this.state, this.state.inputs, { ticking: true }));
       this.interval = setInterval(this.tick.bind(this), 1000);
