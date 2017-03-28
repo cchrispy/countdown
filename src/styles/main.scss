@@ -1,3 +1,18 @@
+* {
+  text-align: center;
+}
+
+.main {
+  background: linear-gradient(#F0F3BD, white);
+}
+
+.header {
+  background-color: #028090;
+  margin: 0px;
+  padding-top: 20px;
+  font-size: 45px;
+}
+
 .timebox, .timeInput {
   display: inline-block;
   padding: 15px 30px;

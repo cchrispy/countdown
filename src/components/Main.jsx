@@ -68,10 +68,9 @@ class Main extends Component {
 
   render() {
     return (
-      <div>
+      <div className='main'>
 
-        <h1 className='header'>Countdown Timer</h1>
-        <hr/>
+        <h1 className='header'>Countdown Timer<hr/></h1>
 
         <div><RaisedButton label={ this.state.ticking ? 'Stop' : 'Start' } onTouchTap={ this.toggleInterval.bind(this) }/></div>
 
