@@ -6,7 +6,7 @@ const TimeInput = props => {
 
   let items = [];
   for (let i = 0; i <= props.count; i++) {
-    items.push(<MenuItem value={ i } primaryText={ i } key={ i }/>)
+    items.push(<MenuItem value={ i } primaryText={ i || '0' } key={ i }/>)
   }
 
   return (

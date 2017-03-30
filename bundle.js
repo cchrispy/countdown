@@ -14873,7 +14873,7 @@ var TimeInput = function TimeInput(props) {
 
   var items = [];
   for (var i = 0; i <= props.count; i++) {
-    items.push(_react2.default.createElement(_MenuItem2.default, { value: i, primaryText: i, key: i }));
+    items.push(_react2.default.createElement(_MenuItem2.default, { value: i, primaryText: i || '0', key: i }));
   }
 
   return _react2.default.createElement(
